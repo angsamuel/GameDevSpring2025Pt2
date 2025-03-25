@@ -32,4 +32,10 @@ public class Creature : MonoBehaviour
         Vector3 direction = target - transform.position;
         Move(direction);
     }
+
+    public void PickUpFood(GameObject food){
+        food.transform.parent = transform;
+        food.transform.localPosition = new Vector3(0,1f,0);
+
+    }
 }
