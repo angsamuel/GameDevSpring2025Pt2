@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class VillagerAI : BaseAI
 {
@@ -7,11 +8,15 @@ public class VillagerAI : BaseAI
     public Creature creature;
     public GameObject foodReturnObject; //where we drop off the food
     public float checkFoodRadius = 10f;
+    NavMeshAgent navMeshAgent;
 
     protected void Awake(){
         base.Awake();
+        navMeshAgent = GetComponent<NavMeshAgent>();
         creature = GetComponent<Creature>();
-        ChangeState(WanderState);
+        //ChangeState(WanderState);
+        ChangeState(PathfindCCState);
+        //ChangeState(PathfindState);
     }
 
     void CheckForFood(){
@@ -85,6 +90,30 @@ public class VillagerAI : BaseAI
             Destroy(targetFood);
             ChangeState(WanderState);
             return;
+        }
+    }
+
+
+    // void PathfindState(){
+    //     navMeshAgent.isStopped = false;
+    //     navMeshAgent.destination = targetFood.transform.position;
+    // }
+
+    NavMeshPath path;
+    int currentCorner = 0;
+    void PathfindCCState(){
+        if(path == null){
+            path = new NavMeshPath();
+            bool pathFound = navMeshAgent.CalculatePath(targetFood.transform.position, path);
+        }
+        if(currentCorner >= path.corners.Length){
+         //   ChangeState(WanderState);
+            return;
+        }
+
+        creature.MoveToward(path.corners[currentCorner]);
+        if(Vector3.Distance(transform.position, path.corners[currentCorner]) < 1f){
+            currentCorner+=1;
         }
     }
 
