@@ -52,11 +52,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _Add: 0
-    - _Mult: 0.07
+    - _Mult: 0.13
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _BottomColor: {r: 0.039215688, g: 0.039215688, b: 0.039215688, a: 1}
-    - _TopColor: {r: 0.41963333, g: 0.7735849, b: 0.73337746, a: 0}
+    - _BottomColor: {r: 0, g: 0.36078432, b: 0.09019608, a: 0}
+    - _TopColor: {r: 0.6981132, g: 0.48441538, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

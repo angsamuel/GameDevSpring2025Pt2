@@ -8,6 +8,9 @@
         },
         {
             "m_Id": "d8bde5435f6c40969281e2e35423d4e8"
+        },
+        {
+            "m_Id": "0c4ae0c3ff934b2485347661ad305b9f"
         }
     ],
     "m_Keywords": [],
@@ -122,8 +125,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 0.0,
-            "y": 200.0
+            "x": -0.000018477439880371094,
+            "y": 199.99996948242188
         },
         "m_Blocks": [
             {
@@ -209,6 +212,34 @@
     },
     "m_Property": {
         "m_Id": "9cbe5de135a447ef8e014f388697ac3c"
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "0c4ae0c3ff934b2485347661ad305b9f",
+    "m_Guid": {
+        "m_GuidSerialized": "bbea3921-cbd4-4cd5-b3e8-9224c99e1138"
+    },
+    "m_Name": "Float",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Float",
+    "m_DefaultReferenceName": "_Float",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
     }
 }
 
@@ -458,10 +489,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -198.99996948242188,
-            "y": 375.9999694824219,
-            "width": 207.99993896484376,
-            "height": 301.9999694824219
+            "x": -240.00003051757813,
+            "y": 368.0,
+            "width": 208.0,
+            "height": 302.00006103515627
         }
     },
     "m_Slots": [
@@ -698,6 +729,9 @@
         },
         {
             "m_Id": "d8bde5435f6c40969281e2e35423d4e8"
+        },
+        {
+            "m_Id": "0c4ae0c3ff934b2485347661ad305b9f"
         }
     ]
 }

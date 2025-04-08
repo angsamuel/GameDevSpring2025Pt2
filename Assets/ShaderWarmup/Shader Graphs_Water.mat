@@ -53,22 +53,22 @@ Material:
     m_Floats:
     - _FoamPower: 4.09
     - _FoamStartAdd: 0
-    - _FoamStartMult: 3.42
+    - _FoamStartMult: 2.14
     - _GradientMoveTimeScale: 0.25
-    - _GradientNoiseMult: 0.2
+    - _GradientNoiseMult: 0.48
     - _GradientNoiseScale: 1.7
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RippleTimeScale: 1
     - _SimpleNoiseMult: 0.11
     - _SimpleNoiseScale: 100
-    - _VoronoiDensity: 6.31
+    - _VoronoiDensity: 2.29
     - _VoronoiDensity_1: 1
     - _VoronoiMoveTimeScale: 0.15
     - _VoronoiMult: 0.13
     - _Y: 0
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.27105936, b: 0.38679248, a: 0}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
+    - _BaseColor: {r: 0.33962262, g: 0, b: 0.04730129, a: 0}
+    - _FoamColor: {r: 0.13207549, g: 0, b: 0.018429147, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
